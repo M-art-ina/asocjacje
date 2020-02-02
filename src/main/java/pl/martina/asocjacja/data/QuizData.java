@@ -25,15 +25,13 @@ public class QuizData implements CommandLineRunner { //CommandLineRunner- interf
         question1.addAnswer(new Answer("Mumbai",false));
         question1.addAnswer(new Answer("Kolkatta",false));
 
-        Question question2 = new Question("Who is CEO of Tesla Motors?");
-        question2.addAnswer(new Answer("Bill Gates",false));
-        question2.addAnswer(new Answer("Steve Jobs",false));
-        question2.addAnswer(new Answer("Elon Musk",true));
+   
 
 
 
         test.addQuestion(question1);
-        test.addQuestion(question2);
+
+
      
         testRepository.save(test); //do naszej bazy danych testRepository zapisalismy nasz test
     }
