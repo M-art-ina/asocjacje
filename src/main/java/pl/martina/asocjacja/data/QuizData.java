@@ -30,10 +30,17 @@ public class QuizData implements CommandLineRunner { //CommandLineRunner- interf
         question2.addAnswer(new Answer("Steve Jobs",false));
         question2.addAnswer(new Answer("Elon Musk",true));
 
+        Question question3 = new Question("Name World's Richest Man?");
+        question3.addAnswer(new Answer("Jeff Bazo",false));
+        question3.addAnswer(new Answer("Bill Gates",false));
+        question3.addAnswer(new Answer("Mark Zuckenberg",true));
+
 
 
         test.addQuestion(question1);
         test.addQuestion(question2);
+        test.addQuestion(question3);
+
      
         testRepository.save(test); //do naszej bazy danych testRepository zapisalismy nasz test
     }
